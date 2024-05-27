@@ -21,7 +21,7 @@
 }
 
 .footer-section h3 {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .footer-section p,
@@ -43,6 +43,7 @@
 }
 
 .contact-info {
+  
   list-style: none;
   padding: 0;
 }
