@@ -2,7 +2,8 @@
   padding: 20px;
   margin: 0 auto;
   font-family: Arial, sans-serif;
-  
+  display: flex;
+  flex-direction: column;
   background: linear-gradient(to right, #f4d9c5, #f7aaaa);
 }
 
@@ -13,12 +14,14 @@ h1 {
 
 .section {
   margin-bottom: 20px;
+  max-width: 1000px;
 }
 
 .email-form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1000px;
 }
 
 .email-form label {
@@ -31,7 +34,7 @@ h1 {
   padding: 10px;
   margin-bottom: 20px;
   width: 100%;
-  max-width: 400px;
+  max-width: 1000px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }

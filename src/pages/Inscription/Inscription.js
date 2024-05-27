@@ -35,7 +35,7 @@ const Inscription = () => {
         </p>
       </div>
       <div className="section">
-        <h2>Demandez un rendez-vouss</h2>
+        <h2>Demandez un rendez-vous</h2>
         <form onSubmit={handleSubmit} className="email-form">
           <label htmlFor="email">Envoyez nous un mail :</label>
           <input

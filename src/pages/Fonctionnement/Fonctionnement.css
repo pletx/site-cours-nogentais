@@ -4,11 +4,16 @@
   color: #333;
   padding: 20px;
   background: linear-gradient(to right,  #c2e9fb,#c3fda1);
+display: flex;
+flex-direction: column;
 }
 
 .section {
+  align-self: center;
   background: #fff;
   margin-bottom: 20px;
+  width: 90%;
+  max-width: 1000px;
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
