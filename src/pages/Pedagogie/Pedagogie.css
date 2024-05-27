@@ -1,0 +1,67 @@
+/* Pedagogie.css */
+.pedagogie-page {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  background: linear-gradient(to right, #e0eafc, #cfdef3);
+}
+
+.pedagogie-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pedagogie-section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.pedagogie-image {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.pedagogie-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.pedagogie-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.pedagogie-text h2 {
+  margin-top: 0;
+}
+
+.pedagogie-text p {
+  line-height: 1.6;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .pedagogie-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pedagogie-section:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .pedagogie-image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .pedagogie-text {
+    padding: 0;
+  }
+}

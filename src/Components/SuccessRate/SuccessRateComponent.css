@@ -1,0 +1,71 @@
+/* SuccessRateComponent.css */
+.success-rate {
+  font-family: Arial, sans-serif;
+  color: #000000;
+  padding: 20px;
+  
+  background: linear-gradient(to right, #ffffffc5, #fffbfbb9);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.additional-info {
+  margin-bottom: 10px;
+}
+
+.success-rate-info {
+  text-align: center;
+}
+
+.success-rate-percent {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.progress-fill {
+  height: 20px;
+  background: #00a308;
+  border-radius: 10px 0 0 10px;
+}
+
+.collapse-button {
+  background: #64b697;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.collapse-button:hover {
+  background: #5aa8a1;
+}
+
+.collapse-content {
+  margin-top: 20px;
+  background: #ffffff40;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.collapse-content p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.collapse-content ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}

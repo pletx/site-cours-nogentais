@@ -1,0 +1,39 @@
+.collapse {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.collapse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.textTitle {
+  margin-left: 10px;
+  color: #888;
+}
+
+.collapsetxt {
+  padding: 10px;
+  background-color: #fff;
+  border-top: 1px solid #ddd;
+}
+
+/* Animation pour l'icône */
+.collapse-header img {
+  transition: transform 0.3s ease;
+}
+
+.collapse-header.active img {
+  transform: rotate(180deg);
+}

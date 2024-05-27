@@ -1,0 +1,49 @@
+/* Fonctionnement.css */
+.fonctionnement {
+  font-family: Arial, sans-serif;
+  color: #333;
+  padding: 20px;
+  background: linear-gradient(to right,  #c2e9fb,#c3fda1);
+}
+
+.section {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: large;
+}
+
+.section h1, .section h2 {
+  
+  color: #444;
+}
+
+.icon-text {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 30px;
+  color: #333;
+  margin-right: 15px;
+}
+
+.section p, .section ul {
+ margin: 0;
+  line-height: 1.6;
+}
+
+.section ul {
+  padding-left: 20px;
+  list-style-type: disc;
+  list-style-type: none;
+}
+
+.section li{
+  text-decoration: none;
+}

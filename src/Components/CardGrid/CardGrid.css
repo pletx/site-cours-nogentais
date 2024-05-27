@@ -1,0 +1,23 @@
+/* CardGrid.css */
+.card-grid {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+ 
+}
+
+.card-link {
+  text-decoration: none; /* Supprime le soulignement des liens */
+}
+
+@media (max-width: 768px) {
+  .card-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+}
