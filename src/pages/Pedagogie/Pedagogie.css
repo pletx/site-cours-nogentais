@@ -4,9 +4,12 @@
   color: #333;
   padding: 20px;
   background: linear-gradient(to right, #e0eafc, #cfdef3);
+  display: flex;
+  flex-direction: column;
 }
 
 .pedagogie-section {
+  align-self: center;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -16,6 +19,7 @@
   margin-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
 }
 
 .pedagogie-section:nth-child(odd) {
