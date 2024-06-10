@@ -4,19 +4,64 @@ import './Gallery.css';
 import Image1 from '../../Assets/Banc.jpg';
 import Image2 from '../../Assets/batiment droite.jpg';
 import Image3 from '../../Assets/cuisine.jpg';
+import Image4 from '../../Assets/Interieur_face_2.jpg'
+import Image5 from'../../Assets/batiment droite.jpg'
+import Image6 from '../../Assets/batiment guche.jpg'
+import Image7 from '../../Assets/batimentdroitface.jpg'
+import Image8 from '../../Assets/classe 2.jpg'
 import Image9 from '../../Assets/decente escalier.jpg';
 import Image10 from '../../Assets/escalierinterieur.jpg';
-import Image11 from '../../Assets/povbanc.jpg';
 import Image12 from '../../Assets/sortie.jpg';
-
+import Image15 from '../../Assets/Cantine.jpg'
+import Image16 from '../../Assets/Cantine_2.jpg'
+import Image17 from '../../Assets/Classe 1_2.jpg'
+import Image18 from '../../Assets/Classe1_3.jpg'
+import Image19 from '../../Assets/Classe_1.jpg'
+import Image20 from '../../Assets/Interieur_face.jpg'
+import Image21 from '../../Assets/classe_3.jpg'
+import Image22 from '../../Assets/couloir.jpg'
+import Image23 from '../../Assets/cuisine.jpg'
+import Image24 from '../../Assets/cuisine_2.jpg'
+import Image26 from '../../Assets/entrée_biblio.jpg'
+import Image28 from '../../Assets/escalier (2).jpg'
+import Image29 from '../../Assets/escalier.jpg'
+import Image30 from '../../Assets/escalierinterieur.jpg'
+import Image31 from '../../Assets/exterieur.jpg'
+import Image32 from '../../Assets/interieur_haut.jpg'
+import Image34 from '../../Assets/livre_1.jpg'
+import Image35 from '../../Assets/livre_2.jpg'
+import Image36 from '../../Assets/povbanc.jpg'
 const initialImages = [
   Image1,
   Image2,
   Image3,
+  Image4,
+  Image5,
+  Image6,
+  Image7,
+  Image8,
   Image9,
   Image10,
-  Image11,
   Image12,
+  Image15,
+  Image16,
+  Image17,
+  Image18,
+  Image19,
+  Image20,
+  Image21,
+  Image22,
+  Image23,
+  Image24,
+  Image26,
+  Image28,
+  Image29,
+  Image30,
+  Image31,
+  Image32,
+  Image34,
+  Image35,
+  Image36
 ];
 
 const Gallery = () => {

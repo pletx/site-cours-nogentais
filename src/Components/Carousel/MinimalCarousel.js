@@ -2,14 +2,16 @@
 import React, { useState, useEffect } from 'react';
 import './MinimalCarousel.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
-import Image1 from '../../Assets/povbanc.jpg'
-import Image2 from '../../Assets/batimentdroitface.jpg'
-import Image3 from '../../Assets/escalierinterieur.jpg'
+import Image_interieur_1 from "../../Assets/Interieur_face.jpg"
+import Image_exterieur from "../../Assets/exterieur.jpg"
+import Image_classe from "../../Assets/classe 2.jpg"
+import Image_classe_2 from "../../Assets/classe_3.jpg"
 
 const images = [
-    Image1,
-    Image2,
-    Image3
+  Image_interieur_1,
+  Image_exterieur,
+  Image_classe,
+  Image_classe_2
 ];
 
 const MinimalCarousel = () => {
