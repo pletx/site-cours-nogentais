@@ -24,7 +24,7 @@ const Home = () => {
         </div>
         <div className="gallery-container">
           <h2>Galerie de Photos</h2>
-          <Gallery />
+          <Gallery isHomePage={true} />
         </div>
       </div>
     </div>

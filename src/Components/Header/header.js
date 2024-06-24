@@ -1,9 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
 import './header.css';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [username, setUsername] = useState('');
+  const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('token');
+    if (token) {
+      setIsAuthenticated(true);
+    }
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -11,6 +24,37 @@ const Header = () => {
 
   const closeMenu = () => {
     setIsMenuOpen(false);
+  };
+
+  const openModal = () => {
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setError('');
+  };
+
+  const handleLogin = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post('http://localhost:3001/login', { username, password });
+      const { token } = response.data;
+      localStorage.setItem('token', token);
+      setIsAuthenticated(true);
+      setIsModalOpen(false);
+      setUsername('');
+      setPassword('');
+      window.location.reload();  // Recharge la page pour refléter l'état de connexion
+    } catch (error) {
+      setError('Nom d’utilisateur ou mot de passe incorrect');
+    }
+  };
+
+  const handleLogout = () => {
+    localStorage.removeItem('token');
+    setIsAuthenticated(false);
+    window.location.reload();  // Recharge la page pour refléter l'état de déconnexion
   };
 
   return (
@@ -40,11 +84,45 @@ const Header = () => {
               <Link to="/galerie-photo" className="nav-link" onClick={closeMenu}>Galerie Photo</Link>
             </li>
             <li className="nav-item">
-              <Link to="/Accès" className="nav-link" onClick={closeMenu}>Accès</Link>
+              <Link to="/accès" className="nav-link" onClick={closeMenu}>Accès</Link>
             </li>
+            {isAuthenticated ? (
+              <li className="nav-item">
+                <button className="logout-button" onClick={handleLogout}>Logout</button>
+              </li>
+            ) : (
+              <li className="nav-item">
+                <button className="login-button" onClick={openModal}>Login</button>
+              </li>
+            )}
           </ul>
         </nav>
       </div>
+      {isModalOpen && (
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-login" onClick={(e) => e.stopPropagation()}>
+            <button className="modal-close" onClick={closeModal}>×</button>
+            <form className="login-form" onSubmit={handleLogin}>
+              <input
+                type="text"
+                placeholder="Nom d’utilisateur"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
+                required
+              />
+              <input
+                type="password"
+                placeholder="Mot de passe"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+              />
+              {error && <p className="error-message">{error}</p>}
+              <button type="submit">Login</button>
+            </form>
+          </div>
+        </div>
+      )}
     </header>
   );
 };
