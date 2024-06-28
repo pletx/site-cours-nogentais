@@ -12,7 +12,6 @@ const ImageManagement = ({ onClose }) => {
 
   const addImage = () => {
     if (newImage) {
-      // Simuler l'appel API pour ajouter une image
       const reader = new FileReader();
       reader.onloadend = () => {
         setImages([...images, reader.result]);
@@ -23,7 +22,6 @@ const ImageManagement = ({ onClose }) => {
   };
 
   const removeImage = (index) => {
-    // Simuler l'appel API pour supprimer une image
     setImages(images.filter((_, i) => i !== index));
   };
 

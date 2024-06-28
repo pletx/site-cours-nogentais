@@ -1,4 +1,4 @@
-// MinimalCarousel.js
+
 import React, { useState, useEffect } from 'react';
 import './MinimalCarousel.css';
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';

@@ -45,7 +45,7 @@ const Header = () => {
       setIsModalOpen(false);
       setUsername('');
       setPassword('');
-      window.location.reload();  // Recharge la page pour refléter l'état de connexion
+      window.location.reload();
     } catch (error) {
       setError('Nom d’utilisateur ou mot de passe incorrect');
     }
@@ -54,7 +54,7 @@ const Header = () => {
   const handleLogout = () => {
     localStorage.removeItem('token');
     setIsAuthenticated(false);
-    window.location.reload();  // Recharge la page pour refléter l'état de déconnexion
+    window.location.reload(); 
   };
 
   return (

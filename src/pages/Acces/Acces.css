@@ -1,10 +1,10 @@
 /* Acces.css */
 .acces {
   background: linear-gradient(to right, #ccf4c5, #f4d9c5);
-  border-radius: 10px;
+ 
+  height: 100%;
   color: #252525;
   font-family: Arial, sans-serif;
-  margin: 20px auto;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }

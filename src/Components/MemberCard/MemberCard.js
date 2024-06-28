@@ -1,4 +1,4 @@
-// MemberCard.js
+
 import React from 'react';
 import './MemberCard.css';
 

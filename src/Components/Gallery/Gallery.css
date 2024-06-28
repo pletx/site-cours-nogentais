@@ -1,4 +1,4 @@
-/* Styles pour la galerie */
+
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -10,13 +10,12 @@
   overflow: hidden;
   cursor: pointer;
   width: 100%;
-  height: 250px; /* Taille fixe pour les conteneurs d'images */
-}
+  height: 250px;}
 
 .gallery-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le conteneur */
+  object-fit: cover;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -77,21 +76,21 @@ border-radius: 10px;}
   background-color: white;
   padding: 20px;
   border-radius: 8px;
-  width: 100%; /* Taille fixe pour la modale */
-  height:90%; /* Taille fixe pour la modale */
+  width: 100%; 
+  height:90%;
   overflow: auto;
   position: relative;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Centre les contenus horizontalement et verticalement */
+  justify-content: center;
 }
 
 .modal-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Assure que l'image remplit le conteneur sans déformation */
+  object-fit: cover;
   display: block;
   margin: 0 auto;
 }

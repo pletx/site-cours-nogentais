@@ -1,4 +1,4 @@
-// MapComponent.js
+
 import React from 'react';
 
 const MapComponent = () => {

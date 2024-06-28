@@ -1,4 +1,4 @@
-/* Footer.css */
+
 .footer {
   background-color: #333;
   color: #fff;
@@ -11,13 +11,12 @@
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap; /* Ajout pour responsive */
-  gap: 20px;
+  flex-wrap: wrap; gap: 20px;
 }
 
 .footer-section {
-  flex: 1; /* Ajustement pour responsive */
-  min-width: 200px; /* Ajustement pour responsive */
+  flex: 1;
+    min-width: 200px;
 }
 
 .footer-section h3 {
@@ -56,7 +55,6 @@
   margin-right: 5px;
 }
 
-/* Responsive styles */
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;

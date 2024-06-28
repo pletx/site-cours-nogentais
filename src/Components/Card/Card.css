@@ -1,4 +1,4 @@
-/* Card.css */
+
 .card {
   background: linear-gradient(to bottom right, #ffecec, #dddaf9);
   border-radius: 10px;
@@ -23,7 +23,7 @@
 .card-icon {
   font-size: 36px;
   color: #2f80ed;
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .card-title {

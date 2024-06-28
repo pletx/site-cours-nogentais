@@ -1,7 +1,6 @@
 /* header.css */
 .header {
   position: relative;
-  width: 100%;
   top: 0;
   z-index: 4;
   background-color: #333;
